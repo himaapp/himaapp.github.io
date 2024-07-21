@@ -4,12 +4,15 @@
 <title>HimaApp</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 <script src="https://kit.fontawesome.com/045028ee36.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
 
 body, html {
   height: 100%;
@@ -42,13 +45,13 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">HimaApp</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="images/logo.png" style="height: 2rem;">&nbsp; <strong>HimaApp</strong> </a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">Features</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Projects</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Blogs</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> About</a>
+      <a href="#features" class="w3-bar-item w3-button"><i class="fab fa-connectdevelop"></i> Features</a>
+      <a href="#projects" class="w3-bar-item w3-button"><i class="fas fa-code"></i> Projects</a>
+      <a href="https://www.himaapp.my.id/" target="_blank" class="w3-bar-item w3-button"><i class="fab fa-blogger-b"></i> Blogs</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> About</a>
       <!--<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>-->
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -62,10 +65,10 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Blogs</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
+  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
+  <a href="https://www.himaapp.my.id/" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Blogs</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
   <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>-->
 </nav>
 
@@ -120,8 +123,8 @@ body, html {
 
 <hr class="line">
 <div class="w3-panel w3-leftbar w3-light-grey">
-  <h3 class="w3-xlarge w3-serif w3-center"><i>It's all about "Communications"</i></h3>
-  <p class="w3-center"><em>Transformasi Digital bukan tentang menerapkan teknologi baru, tetapi lebih mengedepankan bagaimana kita bersama teknologi tersebut berkolaborasi.</em></p>
+  <h3 class="w3-xxlarge w3-serif w3-center"><strong><i>It's all about "Communications"</i></strong></h3>
+  <p class="w3-center w3-large"><em>Transformasi Digital bukan hanya tentang menerapkan teknologi baru, tetapi lebih mengedepankan bagaimana kita bersama teknologi tersebut berkolaborasi.</em></p>
 </div>
 <hr class="line">
 
@@ -134,26 +137,32 @@ body, html {
 
 </div>
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
+<div id="features" class="w3-container" style="padding:16px 16px">
 
   <!---->
-  <h3 class="w3-center">FEATURES</h3>
+  <h3 class="w3-center"><strong>FEATURES</strong></h3>
   <!-- <p class="w3-center w3-large">Key features of our company</p> -->
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-third">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Open Source Hardware's</p>
+      <!-- <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i> -->
+      <img src="images/open_source.jpg" style="width:100%">
+      <h3>Open Source Hardware's</h3>
       <p>Tidak bergantung kepada salah satu Vendor, karena sifatnya yang Open Source, anda dapat dengan mudah membuatnya sendiri.</p>
+      <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
     </div>
     <div class="w3-third">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Custom Software's</p>
-      <p>Memastikan bahwa aplikasi tersebut sesuai yang dibutuhkan dan mudah dioperasikan.</p>
+      <!-- <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i> -->
+      <img src="images/custom_software.jpg" style="width:100%">
+      <h3>Custom Software's</h3>
+      <p>Aplikasi yang sangat disesuaikan dengan kebutuhan user sehingga mudah dan cepat dioperasikan dalam kehidupan sehari-hari</p>
+      <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
     </div>
     <div class="w3-third">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Simple Protocol Communications</p>
+      <!-- <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i> -->
+      <img src="images/simple_protocol.jpg" style="width:100%">
+      <h3>Simple Protocol Communications</h3>
       <p>Menggunakan protocol komunikasi standard yang dipergunakan pada IoT seperti MQTT, Websocket, Rest Api, dll.</p>
+      <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
     </div>
     <!-- <div class="w3-quarter">
       <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
@@ -167,55 +176,194 @@ body, html {
 
 
 <!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">Projects</h3>
+<div id="projects" class="w3-container" style="padding:30x 16px" id="team">
+  <h3 class="w3-center"><strong>PROJECTS</strong></h3>
   <!-- <p class="w3-center w3-large">The ones who runs this company</p> -->
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
+
+  <div class="w3-row-padding" style="margin-top:64px">
+
+    <!-- <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+        <img src="images/excel_qrcode.jpg" alt="John" style="width:100%">
         <div class="w3-container">
-          <h3>Excel QR Code Generator</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <h3>Excel QR Code Generator</h3>     
+          <p>Ingin membuat Label QR Code dengan menggunakan Microsoft Excel.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
         </div>
       </div>
     </div>
+
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <img src="images/rdl_designer.png" alt="Jane" style="width:100%">
         <div class="w3-container">
-          <h3>RDL Designer</h3>
-          <p class="w3-opacity">Art Director</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <h3>RDL Designer</h3>      
+          <p>Aplikasi untuk membuat template label berformat RDL (Report Definition Language) yang dapat dipergunakan untuk membuat label, kartu nama, sertifikat dll.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/label_creator.jpeg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Barcode Creator</h3>
+          <!-- <p class="w3-opacity">Web Designer</p> -->
+          <p>Aplikasi pembuat label yang dapat digunakan untuk membuat label produksi beserta gambar produk, barcode dan serial number.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
         </div>
       </div>
     </div>
+
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <img src="images/digital_planning.jpeg" alt="Dan" style="width:100%">
         <div class="w3-container">
-          <h3>Label Creator</h3>
-          <p class="w3-opacity">Web Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <h3>Digital Planning</h3>
+          <!-- <p class="w3-opacity">Designer</p> -->
+          <p>Membuat planning Produksi secara digital (Paperles System) yang dapat diakses melalui jaringan Lan/Wifi menggunakan Tablet/HP</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
         </div>
       </div>
     </div>
+
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <img src="images/digital_warehouse.jpeg" alt="Dan" style="width:100%">
         <div class="w3-container">
-          <h3Production Counter</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <h3>Digital Warehouse</h3>
+          <!-- <p class="w3-opacity">Designer</p> -->
+          <p>Digitalisasi stock warehouse menggunakan QR Code label yang bertujuan untuk otomatisasi perhitungan stock</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/digital_delivery.jpeg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Digital Delivery</h3>
+          <!-- <p class="w3-opacity">Designer</p> -->
+          <p>Digitalisasi sistem Delivery untuk memudahkan Tracebility, Location Tracking dan Product Guarantee Customer.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/sap_bom.png" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>SAP BOM Viewer</h3>    
+          <p>Aplikasi untuk mengimport Bom Master Data dari SAP, sehingga dapat melihat seluruh Part, Bom dan Routing tanpa harus login ke SAP.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+        </div>
+      </div>
+    </div> -->
+
+    </div>
+
+
+    <div class="w3-row-padding" style="margin-top:64px">
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/document_keeper.jpeg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Document Management System</h3>
+          <!-- <p class="w3-opacity">Designer</p> -->
+          <p>Aplikasi untuk menyimpan file dokumen digital seperti Ijazah, bukti pembayaran, dll.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/production_counter.jpeg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Production Monitoring System</h3>
+          <!-- <p class="w3-opacity">Designer</p> -->
+          <p>Aplikasi untuk melakukan Counter Qty produksi secara real time menggunakan Serial Port.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/esp_watt_meter.jpeg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Energy Monitoring System</h3>
+          <!-- <p class="w3-opacity">Designer</p> -->
+          <p>Aplikasi untuk memonitoring penggunaan energi listrik secara real time menggunakan ESP8266.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/omron_plc.jpeg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Machine/PLC Data Logger</h3>
+          <!-- <p class="w3-opacity">Designer</p> -->
+          <p>Aplikasi untuk membaca Data Memory pada PLC Omron menggunakan Serial Port.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!-- <div class="w3-row-padding" style="margin-top:64px">
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/mitsubishi_plc.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3></h3>Mitsubishi PLC Data Logger</h3>      
+          <p>Aplikasi untuk membaca Data Memory pada PLC Mitsubhisi menggunakan Serial Port dan MX-Component.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/digital_planning.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3></h3>Digital Planning</h3>        
+          <p>Membuat planning Produksi secara digital yang dapat diakses melalui Android.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/digital_warehouse.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3></h3>Digital Warehouse</h3>      
+          <p>Digitalisasi stock warehouse menggunakan QR Code label.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/digital_delivery.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3></h3>Digital Delivery</h3>  
+          <p>Digitalisasi sistem Delivery untuk memudahkan Tracing dan Guarantee.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+        </div>
+      </div>
+    </div>
+
+  </div> -->
 </div>
 
 <!-- Promo Section "Statistics" -->
@@ -284,15 +432,15 @@ body, html {
 </div> -->
 
 <!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
+<div id="about" class="w3-container w3-light-grey" style="padding:128px 16px">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <h3>Digital Transformation made Simple</h3>
+      <h3><strong>Digital Transformation made Simple</strong></h3>
       <p>Penerapan Revolusi Industri 4.0 atau Transformasi Digital itu tidak harus mahal, hanya membutuhkan orang yg tepat dan sedikit pengetahuan. <strong>"<em>Thing</em>"</strong> dapat dibuat, tetapi ide kreatif tidak selalu hadir setiap saat.</p>
       <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Go to Our Store</a></p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="https://www.w3schools.com/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+      <img class="w3-image w3-round-large" src="images/digital_planning.jpg" alt="Buildings" width="700" height="394">
     </div>
   </div>
 </div>
