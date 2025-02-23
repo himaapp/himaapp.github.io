@@ -13,29 +13,19 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-
 body, html {
   height: 100%;
   line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  /*background-image: url("https://www.w3schools.com/w3images/mac.jpg");*/
-  background-image: url("../images/slide-1.jpg");
-  min-height: 100%;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
 }
 
-/* Slide Show */
-  .mySlides {display:none}
-  .w3-left, .w3-right, .w3-badge {cursor:pointer}
-  .w3-badge {height:13px;width:13px;padding:0}
+.my-container {
+  max-width: 1200px; /* Adjust this value to your desired maximum width */
+  margin: auto; /* Center the container */
+}
 
 /*Breadcrumb*/
 ul.breadcrumb {
@@ -60,81 +50,64 @@ ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
-
-.my-container {
-      max-width: 1200px; /* Adjust this value to your desired maximum width */
-      margin: auto; /* Center the container */
-  }
 </style>
+
 </head>
 <body>
-
-
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="../index.html#home" class="w3-bar-item w3-button w3-wide"><img src="../images/logo.png" style="height: 2rem;">&nbsp; <strong>HimaApp</strong> </a>
+   
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="../index.html#features" class="w3-bar-item w3-button"><i class="fab fa-connectdevelop"></i> Features</a>
-      <a href="../index.html#projects" class="w3-bar-item w3-button"><i class="fas fa-code"></i> Projects</a>
-      <a href="https://www.himaapp.my.id/" target="_blank" class="w3-bar-item w3-button"><i class="fab fa-blogger-b"></i> Blogs</a>
-      <a href="../index.html#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> About</a>
-      <!--<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>-->
+      <a href="../index.html#features" class="w3-bar-item w3-button"><i class="fas fa-award"></i>&nbsp; Features</a>
+      <a href="../index.html#projects" class="w3-bar-item w3-button"><i class="fas fa-code"></i>&nbsp; Projects</a>
+      <a href="https://www.himaapp.my.id/" target="_blank" class="w3-bar-item w3-button"><i class="fab fa-blogger-b"></i>&nbsp; Blogs</a>
+      <a href="https://himaapp.myr.id/" target="_blank" class="w3-bar-item w3-button"><i class="fas fa-shopping-cart"></i>&nbsp;  Store</a>
+      <a href="../index.html#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i>&nbsp; About</a>     
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
+
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="../index.html#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
-  <a href="../index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
-  <a href="https://www.himaapp.my.id/" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Blogs</a>
-  <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-  <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>-->
+  <a href="../index.html#features" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fas fa-award"></i>&nbsp; &nbsp; Features</a>
+  <a href="../index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fas fa-code"></i>&nbsp; &nbsp; Projects</a>
+  <a href="https://www.himaapp.my.id/" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fab fa-blogger-b"></i>&nbsp; &nbsp; Blogs</a>
+  <a href="https://himaapp.myr.id/" target="_blank"  onclick="w3_close()" class="w3-bar-item w3-button"><i class="fas fa-shopping-cart"></i>&nbsp; &nbsp; Store</a>
+  <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user"></i>&nbsp; &nbsp; About</a>
 </nav>
-
-
 
  <br />
  <br />
 
 <!-- <div class="w3-panel w3-leftbar w3-light-grey"> -->
-  <div id="navigation" class="w3-container my-container">
-<ul class="breadcrumb ">
-  <li><a href="../index.html">Home</a></li>
-  <li><a href="../index.html#features">Features</a></li>
-  <li>Hardwares</li>
-
-</ul>
+<div id="navigation" class="w3-container my-container">
+  <ul class="breadcrumb ">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html#features">Features</a></li>
+    <li>Hardwares</li>
+  </ul>
 </div>
 
 <div id="title" class="w3-container my-container">
-  <h1><strong>Open Source Hardwares</strong></h1>  
+  <h1><strong>Custom Softwares</strong></h1>  
 </div>
- <hr class="line">
-
-
+<hr class="line">
 
 <div id="content" class="w3-container my-container" style="padding:10px 16px" >
-  <!-- <h1><strong>Open Source Hardwares</strong></h1>  -->
 <p>
-  Dalam dunia teknologi yang terus berkembang, pemanfaatan hardware open source semakin populer. Salah satu contoh nyata adalah penggunaan Arduino, ESP8266, dan Raspberry Pi dalam pengembangan aplikasi. Ketiga perangkat ini menawarkan fleksibilitas, kemampuan, dan harga terjangkau, menjadikannya pilihan ideal untuk berbagai proyek.
+  Dalam dunia teknologi yang terus berkembang, pemanfaatan hardware open source semakin populer.
 </p>
-<h4><strong> Keunggulan Arduino</strong></h4>
-<p>Arduino adalah platform mikrocontroller open source yang populer, terutama untuk aplikasi prototipe dan Internet of Things (IoT). Berikut adalah beberapa keunggulan utama dari Arduino:</p>
-<ul>
-  <li>Kemudahan Penggunaan: Arduino mudah diprogram menggunakan Arduino IDE, membuatnya cocok untuk pemula maupun ahli.</li>
-  <li>Beragam Pilihan Modul dan Sensor: Banyaknya pilihan modul dan sensor yang kompatibel, seperti sensor suhu, kelembaban, dan gerakan.</li>
-  <li>Komunitas Pengguna yang Besar: Dengan komunitas pengguna yang besar dan aktif, Anda dapat dengan mudah menemukan dukungan dan tutorial.</li>
-</ul>
 
 
 </div>
@@ -149,22 +122,15 @@ ul.breadcrumb li a:hover {
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>-->
     <a href="https://www.himaapp.my.id/" target="_blank"><i class="fab fa-blogger-b w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/himawan-susanto/" target="_blank"><i class="	fab fa-linkedin-in w3-hover-opacity"></i></a>
+    <a href="https://himaapp.myr.id/" target="_blank"><i class="fas fa-shopping-cart w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/himawan-susanto/" target="_blank"><i class="fab fa-linkedin-in w3-hover-opacity"></i></a>
+    <!-- <a href="https://www.instagram.com/digkaizen/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a> -->
   </div>
 
   <p> © Copyright 2025 <a href="../index.html#home" class="w3-hover-opacity" style="text-decoration: none;">HimaApp</a>. All Rights Reserved.</p>  
 </footer>
  
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
@@ -181,7 +147,6 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 </script>
-
 
 </body>
 </html>

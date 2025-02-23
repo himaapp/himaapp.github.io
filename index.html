@@ -54,10 +54,11 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="images/logo.png" style="height: 2rem;">&nbsp; <strong>HimaApp</strong> </a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#features" class="w3-bar-item w3-button"><i class="fab fa-connectdevelop"></i> Features</a>
-      <a href="#projects" class="w3-bar-item w3-button"><i class="fas fa-code"></i> Projects</a>
-      <a href="https://www.himaapp.my.id/" target="_blank" class="w3-bar-item w3-button"><i class="fab fa-blogger-b"></i> Blogs</a>
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> About</a>      
+      <a href="#features" class="w3-bar-item w3-button"><i class="fas fa-award"></i>&nbsp; Features</a>
+      <a href="#projects" class="w3-bar-item w3-button"><i class="fas fa-code"></i>&nbsp; Projects</a>
+      <a href="https://www.himaapp.my.id/" target="_blank" class="w3-bar-item w3-button"><i class="fab fa-blogger-b"></i>&nbsp; Blogs</a>
+      <a href="https://himaapp.myr.id/" target="_blank" class="w3-bar-item w3-button"><i class="fas fa-shopping-cart"></i>&nbsp;  Store</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i>&nbsp; About</a>      
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -70,16 +71,17 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button">Features</a>
-  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
-  <a href="https://www.himaapp.my.id/" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Blogs</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>  
+  <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fas fa-award"></i>&nbsp; &nbsp; Features</a>
+  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fas fa-code"></i>&nbsp; &nbsp; Projects</a>
+  <a href="https://www.himaapp.my.id/" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fab fa-blogger-b"></i>&nbsp; &nbsp; Blogs</a>
+  <a href="https://himaapp.myr.id/" target="_blank"  onclick="w3_close()" class="w3-bar-item w3-button"><i class="fas fa-shopping-cart"></i>&nbsp; &nbsp; Store</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user"></i>&nbsp; &nbsp; About</a>  
 </nav>
 
 <!-- Slide Show-->
 
 <!-- <div class="w3-content w3-display-container" style="max-width:1200px"> -->
-  <div class="w3-display-container" >
+  <div class="w3-display-container" id="home">
   <img class="mySlides" src="images/slide-1.jpg" style="width:100%">
   <!-- <div class="w3-display-bottomcenter w3-container w3-padding-16 w3-black">
     French Alps
@@ -147,21 +149,21 @@ body, html {
       <img src="images/open_source.jpg" style="width:100%">
       <h3>Open Source Hardware's</h3>
       <p>Tidak bergantung kepada salah satu Vendor, karena sifatnya yang Open Source, anda dapat dengan mudah membuatnya sendiri.</p>
-      <p><a href="/pages/feature_hardware.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
+      <p><a href="/pages/feature_hardwares.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
     </div>
 
     <div class="w3-third">      
       <img src="images/custom_software.jpg" style="width:100%">
       <h3>Custom Software's</h3>
       <p>Aplikasi yang sangat disesuaikan dengan kebutuhan user sehingga mudah dan cepat dioperasikan dalam kehidupan sehari-hari</p>
-      <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+      <p><a href="/pages/feature_softwares.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
     </div>
 
     <div class="w3-third">      
       <img src="images/simple_protocol.jpg" style="width:100%">
       <h3>Standard Communications</h3>
       <p>Menggunakan protocol komunikasi standard yang dipergunakan pada IoT seperti MQTT, Websocket, Rest Api, dll.</p>
-      <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+      <p><a href="/pages/feature_communications.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
     </div>
    
   </div>
@@ -179,7 +181,7 @@ body, html {
         <div class="w3-container">
           <h3>Barcode Creator</h3>          
           <p>Aplikasi pembuat label yang dapat digunakan untuk membuat label produksi beserta gambar produk, barcode dan serial number.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+          <p><a href="/pages/project_barcode.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
         </div>
       </div>
     </div>
@@ -190,7 +192,7 @@ body, html {
         <div class="w3-container">
           <h3>Digital Planning</h3>         
           <p>Membuat planning Produksi secara digital (Paperles System) yang dapat diakses melalui jaringan Lan/Wi-Fi</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+          <p><a href="/pages/project_planning.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
         </div>
       </div>
     </div>
@@ -201,7 +203,7 @@ body, html {
         <div class="w3-container">
           <h3>Digital Warehouse</h3>         
           <p>Digitalisasi stock warehouse menggunakan QR Code label yang bertujuan untuk otomatisasi perhitungan stock</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+          <p><a href="/pages/project_warehouse.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
         </div>
       </div>
     </div>
@@ -212,7 +214,7 @@ body, html {
         <div class="w3-container">
           <h3>Digital Delivery</h3>       
           <p>Digitalisasi sistem Delivery untuk memudahkan Tracebility, Location Tracking dan Product Guarantee Customer.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+          <p><a href="/pages/project_delivery.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
         </div>
       </div>
     </div> 
@@ -227,7 +229,7 @@ body, html {
         <div class="w3-container">
           <h3>Document Management System</h3>          
           <p>Aplikasi untuk menyimpan file dokumen digital seperti Ijazah, bukti pembayaran, dll.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+          <p><a href="/pages/project_dms.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
         </div>
       </div>
     </div>
@@ -238,7 +240,7 @@ body, html {
         <div class="w3-container">
           <h3>Production Monitoring System</h3>          
           <p>Aplikasi untuk melakukan Counter Qty produksi secara real time menggunakan Serial Port.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+          <p><a href="/pages/project_production_monitoring.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
         </div>
       </div>
     </div>
@@ -249,7 +251,7 @@ body, html {
         <div class="w3-container">
           <h3>Energy Monitoring System</h3>         
           <p>Aplikasi untuk memonitoring penggunaan energi listrik secara real time menggunakan ESP8266.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+          <p><a href="/pages/project_energy_monitoring.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
         </div>
       </div>
     </div>
@@ -260,7 +262,7 @@ body, html {
         <div class="w3-container">
           <h3>Machine/PLC Data Logger</h3>          
           <p>Aplikasi untuk membaca Data Memory pada PLC Omron menggunakan Serial Port.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</button></p>
+          <p><a href="/pages/project_plc_data_logger.html" class="w3-button w3-light-grey w3-block"><i class="fab fa-readme"></i> Selengkapnya...</a></p>
         </div>
       </div>
     </div>
@@ -284,7 +286,7 @@ body, html {
     <div class="w3-col m6">
       <h3><strong>Digital Transformation made Simple</strong></h3>
       <p>Penerapan Revolusi Industri 4.0 atau Transformasi Digital itu tidak harus mahal, hanya membutuhkan orang yg tepat dan sedikit pengetahuan. <strong>"<em>Thing</em>"</strong> dapat dibuat, tetapi ide kreatif tidak selalu hadir setiap saat.</p>
-      <p><a href="https://himaapp.myr.id/" class="w3-button w3-black"><i class="fa fa-th"> </i> Go to Our Store</a></p>
+      <p><a href="https://himaapp.myr.id/" class="w3-button w3-black" target="_blank" ><i class="fa fa-th"> </i> Go to Our Store</a></p>
     </div>
     <div class="w3-col m6">
       <img class="w3-image w3-round-large" src="images/digital_planning.jpg" alt="Buildings" width="700" height="394">
@@ -302,10 +304,12 @@ body, html {
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>-->
     <a href="https://www.himaapp.my.id/" target="_blank"><i class="fab fa-blogger-b w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/himawan-susanto/" target="_blank"><i class="	fab fa-linkedin-in w3-hover-opacity"></i></a>
+    <a href="https://himaapp.myr.id/" target="_blank"><i class="fas fa-shopping-cart w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/himawan-susanto/" target="_blank"><i class="fab fa-linkedin-in w3-hover-opacity"></i></a>
+    <!-- <a href="https://www.instagram.com/digkaizen/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a> -->
   </div>
 
-  <p> © Copyright 2025 HimaApp. All Rights Reserved.</p>  
+  <p> © Copyright 2025 <a href="#home" class="w3-hover-opacity" style="text-decoration: none;">HimaApp</a>. All Rights Reserved.</p>  
 </footer>
  
 <script>
