@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HimaApp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+<script src="https://kit.fontawesome.com/045028ee36.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.my-container {
+  max-width: 1200px; /* Adjust this value to your desired maximum width */
+  margin: auto; /* Center the container */
+}
+
+/*Breadcrumb*/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  /* background-color: #eee; */
+}
+ul.breadcrumb li {
+  display: inline;
+  /* font-size: 18px; */
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../index.html#home" class="w3-bar-item w3-button w3-wide"><img src="../images/logo.png" style="height: 2rem;">&nbsp; <strong>HimaApp</strong> </a>
+   
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../index.html#features" class="w3-bar-item w3-button"><i class="fas fa-award"></i>&nbsp; Features</a>
+      <a href="../index.html#projects" class="w3-bar-item w3-button"><i class="fas fa-code"></i>&nbsp; Projects</a>
+      <a href="https://www.himaapp.my.id/" target="_blank" class="w3-bar-item w3-button"><i class="fab fa-blogger-b"></i>&nbsp; Blogs</a>
+      <a href="https://himaapp.myr.id/" target="_blank" class="w3-bar-item w3-button"><i class="fas fa-shopping-cart"></i>&nbsp;  Store</a>
+      <a href="../index.html#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i>&nbsp; About</a>     
+    </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="../index.html#features" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fas fa-award"></i>&nbsp; &nbsp; Features</a>
+  <a href="../index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fas fa-code"></i>&nbsp; &nbsp; Projects</a>
+  <a href="https://www.himaapp.my.id/" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fab fa-blogger-b"></i>&nbsp; &nbsp; Blogs</a>
+  <a href="https://himaapp.myr.id/" target="_blank"  onclick="w3_close()" class="w3-bar-item w3-button"><i class="fas fa-shopping-cart"></i>&nbsp; &nbsp; Store</a>
+  <a href="../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-user"></i>&nbsp; &nbsp; About</a>
+</nav>
+
+ <br />
+ <br />
+
+<!-- <div class="w3-panel w3-leftbar w3-light-grey"> -->
+<div id="navigation" class="w3-container my-container">
+  <ul class="breadcrumb ">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html#features">Features</a></li>
+    <li>Hardwares</li>
+  </ul>
+</div>
+
+<div id="title" class="w3-container my-container">
+  <h1><strong>Open Source Hardwares</strong></h1>  
+</div>
+<hr class="line">
+
+<div id="content" class="w3-container my-container" style="padding:10px 16px" >
+<p>
+  Dalam dunia teknologi yang terus berkembang, pemanfaatan hardware open source semakin populer.
+</p>
+
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="../index.html#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>-->
+    <a href="https://www.himaapp.my.id/" target="_blank"><i class="fab fa-blogger-b w3-hover-opacity"></i></a>
+    <a href="https://himaapp.myr.id/" target="_blank"><i class="fas fa-shopping-cart w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/himawan-susanto/" target="_blank"><i class="fab fa-linkedin-in w3-hover-opacity"></i></a>
+    <!-- <a href="https://www.instagram.com/digkaizen/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a> -->
+  </div>
+
+  <p> © Copyright 2025 <a href="../index.html#home" class="w3-hover-opacity" style="text-decoration: none;">HimaApp</a>. All Rights Reserved.</p>  
+</footer>
+ 
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
