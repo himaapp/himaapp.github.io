@@ -95,26 +95,66 @@ ul.breadcrumb li a:hover {
   <ul class="breadcrumb ">
     <li><a href="../index.html">Home</a></li>
     <li><a href="../index.html#features">Features</a></li>
-    <li>Hardwares</li>
+    <li>IoT Standard Communications</li>
   </ul>
 </div>
 
 <div id="title" class="w3-container my-container">
-  <h1><strong>Open Source Hardwares</strong></h1>  
+  <!-- <h1><strong>IoT Standard Communications</strong></h1>  -->
+  <h1><strong>Standarisasi Protokol Komunikasi IoT dalam Manufaktur: Kunci Efisiensi dan Integrasi Sistem Produksi</strong></h1>  
 </div>
 <hr class="line">
 
 <div id="content" class="w3-container my-container" style="padding:10px 16px" >
-<p>
-  Dalam dunia teknologi yang terus berkembang, pemanfaatan hardware open source semakin populer.
-</p>
+    <article class="markdown-body">
+      
+      <!-- <h1 class="atx" id="standarisasi-protokol-komunikasi-iot-dalam-manufaktur-kunci-efisiensi-dan-integrasi-sistem-produksi">Standarisasi Protokol Komunikasi IoT dalam Manufaktur: Kunci Efisiensi dan Integrasi Sistem Produksi</h1> -->
+
+<p>Di era digitalisasi industri, konektivitas antar perangkat bukan lagi sekadar pelengkap—melainkan fondasi utama dalam membangun sistem manufaktur yang efisien, responsif, dan scalable. Penggunaan protokol komunikasi standar IoT seperti MQTT, WebSocket, REST API, dan Modbus telah menjadi solusi strategis untuk menjembatani komunikasi antara perangkat seperti PLC, sensor, controller, dan dashboard produksi.</p>
+<p>🔗 Mengapa Protokol Komunikasi Penting dalam Manufaktur?
+Dalam lingkungan produksi, data harus mengalir secara real-time dan akurat. Tanpa protokol komunikasi yang tepat, integrasi antar sistem menjadi rumit, rawan error, dan sulit di-maintain. Protokol standar memungkinkan perangkat dari berbagai vendor dan platform untuk saling berkomunikasi dengan cara yang konsisten dan dapat diandalkan.</p>
+<h3 class="atx" id="⚙️-keunggulan-protokol-komunikasi-iot-yang-umum-digunakan">⚙️ Keunggulan Protokol Komunikasi IoT yang Umum Digunakan</h3>
+<ol>
+<li>MQTT (Message Queuing Telemetry Transport)
+•     Ringan dan efisien, cocok untuk komunikasi antar sensor dan perangkat dengan bandwidth rendah.
+•     Mendukung publish–subscribe model, ideal untuk sistem monitoring dan notifikasi.
+•     Contoh: Sensor suhu mengirimkan data ke broker MQTT dan di tampilkan pada dashboard produksi setiap 5 detik tanpa membebani jaringan.</li>
+<li>WebSocket
+•     Komunikasi dua arah secara real-time antara client dan server.
+•     Cocok untuk aplikasi visualisasi data produksi atau function test yang membutuhkan respons langsung.
+•     Contoh: Sistem Pokayoke Digital menampilkan status pengujian komponen secara live ke layar operator.</li>
+<li>REST API
+•     Standar komunikasi berbasis HTTP, mudah diintegrasikan dengan aplikasi web dan mobile.
+•     Cocok untuk pengambilan data, pelaporan, dan integrasi dengan sistem ERP atau MES.
+•     Contoh: Aplikasi Dashboard Produksi mengambil data hasil inspeksi dari database produksi melalui endpoint REST.</li>
+<li>Modbus
+•     Protokol industri klasik, banyak digunakan untuk komunikasi dengan PLC dan perangkat legacy.
+•     Stabil dan mudah diimplementasikan dalam sistem kontrol mesin.
+•     Contoh: PLC mengirimkan status motor dan sensor tekanan ke sistem inspeksi melalui Modbus RTU.</li>
+</ol>
+<h3 class="atx" id="📌-contoh-kasus-penggunaan-di-lapangan">📌 Contoh Kasus Penggunaan di Lapangan</h3>
+<p>Di sebuah pabrik elektronik, tim produksi menggunakan kombinasi MQTT dan REST API untuk menghubungkan sensor inspeksi dengan sistem pelaporan. Sensor mengirimkan data ke broker MQTT, lalu REST API digunakan untuk menyimpan data ke database dan menampilkan hasilnya di dashboard manajemen.
+Hasilnya:
+•     Waktu respons QC dapat diturunkan hingga 50%
+•     Data validasi lebih konsisten dan mudah ditelusuri
+•     Integrasi dengan sistem ERP berjalan lancar tanpa perlu middleware kompleks</p>
+<h3 class="atx" id="✅-tips-implementasi-protokol-komunikasi-di-manufaktur">✅ Tips Implementasi Protokol Komunikasi di Manufaktur</h3>
+<ol>
+<li>Identifikasi Kebutuhan Komunikasi . Tentukan apakah sistem membutuhkan komunikasi real-time, batch, atau hybrid—lalu pilih protokol yang sesuai.</li>
+<li>Gunakan Arsitektur Modular. Pisahkan fungsi pengambilan data, pengolahan, dan visualisasi agar sistem mudah dikembangkan dan di-maintain.</li>
+<li>Pastikan Keamanan dan Enkripsi Gunakan TLS/SSL untuk protokol seperti MQTT dan REST API agar data produksi tetap aman, dapat juga menggunakan VPN jika data ingin di akses dari luar.</li>
+<li>Libatkan Tim Engineering dan IT Kolaborasi lintas fungsi penting untuk memastikan protokol yang dipilih sesuai dengan infrastruktur dan kebutuhan operasional.</li>
+</ol>
+<h3 class="atx" id="🔍-kesimpulan">🔍 Kesimpulan</h3>
+<p>Penggunaan protokol komunikasi standar dalam aplikasi manufaktur bukan hanya soal teknis, tapi soal membangun sistem yang terintegrasi, efisien, dan siap berkembang. Dengan memilih protokol yang tepat seperti MQTT, WebSocket, REST API, atau Modbus, tim engineer, QC, produksi, dan manajemen dapat bekerja lebih sinkron, responsif, dan berbasis data nyata.</p>
+</article>
 
 
 </div>
-
+<p class="w3-center"><a href="https://himaapp.myr.id/" class="w3-button w3-black" target="_blank" ><i class="fa fa-th"> </i> Go to Our Store</a></p>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="../index.html#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="../features/communications.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
