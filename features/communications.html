@@ -105,39 +105,65 @@ ul.breadcrumb li a:hover {
 </div>
 <hr class="line">
 
+<div class="w3-content w3-center" >
+  <div class="w3-display-container" style="width:100%; ">
+    <img src="../images/simple_protocol.jpg" alt="IoT Standard Communications"
+         class="w3-image w3-center w3-border w3-padding"
+         style="width:75%; height:100%; object-fit:cover;">
+  </div>
+</div>
+
 <div id="content" class="w3-container my-container" style="padding:10px 16px" >
     <article class="markdown-body">
       
       <!-- <h1 class="atx" id="standarisasi-protokol-komunikasi-iot-dalam-manufaktur-kunci-efisiensi-dan-integrasi-sistem-produksi">Standarisasi Protokol Komunikasi IoT dalam Manufaktur: Kunci Efisiensi dan Integrasi Sistem Produksi</h1> -->
 
 <p>Di era digitalisasi industri, konektivitas antar perangkat bukan lagi sekadar pelengkap—melainkan fondasi utama dalam membangun sistem manufaktur yang efisien, responsif, dan scalable. Penggunaan protokol komunikasi standar IoT seperti MQTT, WebSocket, REST API, dan Modbus telah menjadi solusi strategis untuk menjembatani komunikasi antara perangkat seperti PLC, sensor, controller, dan dashboard produksi.</p>
+
 <p>🔗 Mengapa Protokol Komunikasi Penting dalam Manufaktur?
 Dalam lingkungan produksi, data harus mengalir secara real-time dan akurat. Tanpa protokol komunikasi yang tepat, integrasi antar sistem menjadi rumit, rawan error, dan sulit di-maintain. Protokol standar memungkinkan perangkat dari berbagai vendor dan platform untuk saling berkomunikasi dengan cara yang konsisten dan dapat diandalkan.</p>
+
 <h3 class="atx" id="⚙️-keunggulan-protokol-komunikasi-iot-yang-umum-digunakan">⚙️ Keunggulan Protokol Komunikasi IoT yang Umum Digunakan</h3>
+
 <ol>
 <li>MQTT (Message Queuing Telemetry Transport)
-•     Ringan dan efisien, cocok untuk komunikasi antar sensor dan perangkat dengan bandwidth rendah.
-•     Mendukung publish–subscribe model, ideal untuk sistem monitoring dan notifikasi.
-•     Contoh: Sensor suhu mengirimkan data ke broker MQTT dan di tampilkan pada dashboard produksi setiap 5 detik tanpa membebani jaringan.</li>
+  <ol style="list-style-type: disc;">
+    <li>Ringan dan efisien, cocok untuk komunikasi antar sensor dan perangkat dengan bandwidth rendah.</li>
+    <li>Mendukung publish–subscribe model, ideal untuk sistem monitoring dan notifikasi.</li>
+    <li>Contoh: Sensor suhu mengirimkan data ke broker MQTT dan di tampilkan pada dashboard produksi setiap 5 detik tanpa membebani jaringan.</li>
+  </ol>  
+</li>
 <li>WebSocket
-•     Komunikasi dua arah secara real-time antara client dan server.
-•     Cocok untuk aplikasi visualisasi data produksi atau function test yang membutuhkan respons langsung.
-•     Contoh: Sistem Pokayoke Digital menampilkan status pengujian komponen secara live ke layar operator.</li>
+  <ol style="list-style-type: disc;">
+    <li>Komunikasi dua arah secara real-time antara client dan server.</li>
+    <li>Cocok untuk aplikasi visualisasi data produksi atau function test yang membutuhkan respons langsung.</li>
+    <li>Contoh: Sistem Pokayoke Digital menampilkan status pengujian komponen secara live ke layar operator.</li>
+  </ol>
+   </li>
 <li>REST API
-•     Standar komunikasi berbasis HTTP, mudah diintegrasikan dengan aplikasi web dan mobile.
-•     Cocok untuk pengambilan data, pelaporan, dan integrasi dengan sistem ERP atau MES.
-•     Contoh: Aplikasi Dashboard Produksi mengambil data hasil inspeksi dari database produksi melalui endpoint REST.</li>
+  <ol style="list-style-type: disc;">
+    <li>Standar komunikasi berbasis HTTP, mudah diintegrasikan dengan aplikasi web dan mobile.</li>
+    <li>Cocok untuk pengambilan data, pelaporan, dan integrasi dengan sistem ERP atau MES.</li>
+    <li>Contoh: Aplikasi Dashboard Produksi mengambil data hasil inspeksi dari database produksi melalui endpoint REST.</li>
+  </ol>
+  </li>
 <li>Modbus
-•     Protokol industri klasik, banyak digunakan untuk komunikasi dengan PLC dan perangkat legacy.
-•     Stabil dan mudah diimplementasikan dalam sistem kontrol mesin.
-•     Contoh: PLC mengirimkan status motor dan sensor tekanan ke sistem inspeksi melalui Modbus RTU.</li>
+  <ol style="list-style-type: disc;">
+    <li>Protokol industri klasik, banyak digunakan untuk komunikasi dengan PLC dan perangkat legacy.</li>
+    <li>Stabil dan mudah diimplementasikan dalam sistem kontrol mesin.</li>
+    <li>Contoh: PLC mengirimkan status motor dan sensor tekanan ke sistem inspeksi melalui Modbus RTU.</li>
+  </ol>
+  </li>
 </ol>
 <h3 class="atx" id="📌-contoh-kasus-penggunaan-di-lapangan">📌 Contoh Kasus Penggunaan di Lapangan</h3>
 <p>Di sebuah pabrik elektronik, tim produksi menggunakan kombinasi MQTT dan REST API untuk menghubungkan sensor inspeksi dengan sistem pelaporan. Sensor mengirimkan data ke broker MQTT, lalu REST API digunakan untuk menyimpan data ke database dan menampilkan hasilnya di dashboard manajemen.
 Hasilnya:
-•     Waktu respons QC dapat diturunkan hingga 50%
-•     Data validasi lebih konsisten dan mudah ditelusuri
-•     Integrasi dengan sistem ERP berjalan lancar tanpa perlu middleware kompleks</p>
+<ol style="list-style-type: disc;">
+    <li>Waktu respons QC dapat diturunkan hingga 50%</li>
+    <li>Data validasi lebih konsisten dan mudah ditelusuri</li>
+    <li>Integrasi dengan sistem ERP berjalan lancar tanpa perlu middleware kompleks</li>
+  </ol>
+  </p>
 <h3 class="atx" id="✅-tips-implementasi-protokol-komunikasi-di-manufaktur">✅ Tips Implementasi Protokol Komunikasi di Manufaktur</h3>
 <ol>
 <li>Identifikasi Kebutuhan Komunikasi . Tentukan apakah sistem membutuhkan komunikasi real-time, batch, atau hybrid—lalu pilih protokol yang sesuai.</li>

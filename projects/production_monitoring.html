@@ -94,27 +94,83 @@ ul.breadcrumb li a:hover {
 <div id="navigation" class="w3-container my-container">
   <ul class="breadcrumb ">
     <li><a href="../index.html">Home</a></li>
-    <li><a href="../index.html#features">Features</a></li>
-    <li>Hardwares</li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li>Production Monitoring System</li>
   </ul>
 </div>
 
 <div id="title" class="w3-container my-container">
-  <h1><strong>Open Source Hardwares</strong></h1>  
+  <h1><strong>Aplikasi Counter Quantity Produksi secara Real-Time: Solusi Digital untuk Monitoring dan Efisiensi di Manufaktur</strong></h1>  
 </div>
 <hr class="line">
 
+<div class="w3-content w3-center" style="max-width:1024px">
+  <div class="w3-display-container" style="width:100%; aspect-ratio:16/9;">
+    <img src="../images/production_counter.jpeg" alt="Production Monitoring System"
+         class="w3-image w3-center w3-border w3-padding"
+         style="width:100%; height:100%; object-fit:cover;">
+  </div>
+</div>
+
 <div id="content" class="w3-container my-container" style="padding:10px 16px" >
-<p>
-  Dalam dunia teknologi yang terus berkembang, pemanfaatan hardware open source semakin populer.
-</p>
+  <article class="markdown-body">
+    <!-- <h1 class="atx" id="aplikasi-counter-quantity-produksi-real-time-solusi-digital-untuk-monitoring-dan-efisiensi-di-manufaktur">Aplikasi Counter Quantity Produksi Real-Time: Solusi Digital untuk Monitoring dan Efisiensi di Manufaktur</h1> -->
+
+<p>Dalam dunia manufaktur yang serba cepat dan berbasis data, kemampuan untuk memantau jumlah produksi dan waktu henti (downtime) secara real-time menjadi kunci dalam menjaga efisiensi dan kualitas. Salah satu pendekatan yang semakin relevan adalah penggunaan aplikasi counter quantity produksi berbasis Serial Port atau open source hardware seperti Arduino dan Raspberry Pi—yang berfungsi layaknya sistem Andon digital.
+Teknologi ini memungkinkan pencatatan otomatis jumlah unit yang diproduksi, deteksi downtime, dan integrasi langsung ke sistem pelaporan tanpa perlu input manual atau dokumen fisik.</p>
+<p>⚙️ Mengapa Counter Quantity Real-Time Itu Penting?
+Tim produksi, QC, dan manajemen membutuhkan data aktual untuk:
+<ol list-style-type="disc">
+  <li>Mengetahui progres produksi per shift atau per mesin</li>
+  <li>Mendeteksi gangguan atau downtime secara cepat</li>
+  <li>Melakukan analisis performa dan efisiensi kerja</li>
+</ol>
+   
+Tanpa sistem digital, pencatatan jumlah produksi sering kali dilakukan secara manual, rawan kesalahan, dan tidak bisa diakses secara langsung oleh pihak lain.</p>
+<h3 class="atx" id="🔧-keuntungan-penggunaan-aplikasi-counter-qty-produksi-digital">🔧 Keuntungan Penggunaan Aplikasi Counter Qty Produksi Digital</h3>
+<ol>
+<li>Paperless System
+Data produksi dicatat secara otomatis dan tersimpan dalam sistem digital, menghilangkan kebutuhan form manual atau pencatatan di papan tulis.</li>
+<li>Monitoring Produksi dan Downtime Secara Real-Time
+Setiap unit yang diproduksi dapat dihitung secara langsung melalui sensor atau input digital, dan downtime dapat ditandai otomatis saat mesin berhenti.</li>
+<li>Integrasi dengan Dashboard Produksi
+Data dari Arduino atau Raspberry Pi dapat dikirim ke aplikasi dashboard, sehingga manajemen dapat memantau performa produksi dari ruang kontrol atau perangkat mobile.</li>
+<li>Fleksibel dan Biaya Rendah
+Menggunakan open source hardware memungkinkan perusahaan membangun sistem sesuai kebutuhan tanpa bergantung pada vendor besar, dengan biaya yang jauh lebih kompetitif.</li>
+</ol>
+<h3 class="atx" id="📌-contoh-kasus-penggunaan-di-lapangan">📌 Contoh Kasus Penggunaan di Lapangan</h3>
+<p>Di sebuah pabrik perakitan elektronik, setiap workstation dilengkapi dengan sensor tombol magnetic yang terpasang di bagian pintu mesin, dimana sensor tombol magnetic ini terhubung ke Arduino. Setiap kali operator menyelesaikan satu unit bersamaan dengan terbukanya pintu mesin,  sensor tombol magnetic tersebut bereaksi kemudian Arduino mengirimkan sinyal ke Raspberry Pi melalui Serial Port. Raspberry Pi mencatat jumlah unit, waktu produksi, dan mendeteksi jika tidak ada aktivitas selama lebih dari 5 menit (downtime).
+Data ini dikirim ke dashboard produksi yang dapat diakses oleh supervisor, QC, dan manajemen secara real-time.
+Hasilnya:
+<ol list-style-type="disc">
+  <li>Pencatatan produksi menjadi 100% akurat</li>
+  <li>Downtime dapat diidentifikasi dan ditindaklanjuti lebih cepat</li>
+  <li>Laporan harian dan mingguan dapat dibuat otomatis tanpa input manual</li>
+</ol>
+  </p>
+<h3 class="atx" id="✅-tips-implementasi-di-lingkungan-manufaktur">✅ Tips Implementasi di Lingkungan Manufaktur</h3>
+<ol>
+<li>Mulai dari Satu Workstation atau Mesin 
+Uji sistem di satu titik produksi terlebih dahulu untuk validasi dan penyempurnaan sebelum diterapkan secara luas.</li>
+<li>Gunakan Komponen Modular 
+Pilih sensor, mikrokontroler, dan koneksi yang mudah diganti atau ditingkatkan agar sistem tetap fleksibel.</li>
+<li>Integrasikan dengan Sistem Pelaporan 
+Hubungkan data counter ke sistem SQL atau dashboard agar informasi dapat diakses lintas tim.</li>
+<li>Libatkan Tim Produksi dan QC dalam Desain UI 
+Pastikan antarmuka aplikasi mudah digunakan oleh operator dan memberikan informasi yang relevan bagi tim Produksi, QC, Engineer dan manajemen.</li>
+</ol>
+<h3 class="atx" id="🔍-kesimpulan">🔍 Kesimpulan</h3>
+<p>Aplikasi counter quantity produksi berbasis Arduino, Raspberry Pi, dan Serial Port bukan hanya alat teknis, tetapi fondasi penting dalam membangun sistem manufaktur yang efisien, transparan, dan berbasis data real-time. Dengan sistem ini, perusahaan dapat memantau output produksi, mendeteksi downtime, dan mengurangi ketergantungan pada pencatatan manual. Bagi user dan manajemen, ini adalah langkah nyata menuju digitalisasi operasional yang lebih cerdas dan responsif.</p>
+</article>
 
 
 </div>
 
+<p class="w3-center"><a href="https://himaapp.myr.id/" class="w3-button w3-black" target="_blank" ><i class="fa fa-th"> </i> Go to Our Store</a></p>
+
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="../index.html#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="../projects/production_monitoring.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>

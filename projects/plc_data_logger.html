@@ -94,27 +94,85 @@ ul.breadcrumb li a:hover {
 <div id="navigation" class="w3-container my-container">
   <ul class="breadcrumb ">
     <li><a href="../index.html">Home</a></li>
-    <li><a href="../index.html#features">Features</a></li>
-    <li>Hardwares</li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li>PLC Data Logger</li>
   </ul>
 </div>
 
 <div id="title" class="w3-container my-container">
-  <h1><strong>Open Source Hardwares</strong></h1>  
+  <h1><strong>Machine/PLC Data Logger: Kunci Real-Time Monitoring dan Efisiensi Produksi</strong></h1>  
 </div>
 <hr class="line">
 
+<div class="w3-content w3-center" >
+  <div class="w3-display-container" style="width:100%; ">
+    <img src="../images/omron_plc.jpeg" alt="PLC Data Logger"
+         class="w3-image w3-center w3-border w3-padding"
+         style="width:80%; height:100%; object-fit:cover;">
+  </div>
+</div>
+
 <div id="content" class="w3-container my-container" style="padding:10px 16px" >
-<p>
-  Dalam dunia teknologi yang terus berkembang, pemanfaatan hardware open source semakin populer.
-</p>
+ <article class="markdown-body">
+  <!-- <h1 class="atx" id="aplikasi-pembaca-data-memory-plc-kunci-monitoring-real-time-dan-efisiensi-produksi">Aplikasi Pembaca Data Memory PLC: Kunci Monitoring Real-Time dan Efisiensi Produksi</h1> -->
+
+<p>Dalam sistem manufaktur modern, Programmable Logic Controller (PLC) berperan sebagai otak dari berbagai proses otomatisasi—mengendalikan mesin, membaca sensor, dan menjalankan logika produksi. Namun, potensi penuh dari PLC baru benar-benar dimanfaatkan ketika data internalnya, seperti status mesin, counter produksi, dan alarm, dapat dibaca dan dianalisis secara real-time melalui aplikasi pembaca data memory atau data logger.
+Aplikasi ini memungkinkan tim engineering, QC, dan manajemen untuk mengakses informasi langsung dari PLC tanpa harus membuka panel atau menunggu laporan manual, sehingga pengambilan keputusan menjadi lebih cepat dan berbasis data aktual.</p>
+<p>🧠 Mengapa Membaca Data Memory PLC Itu Penting?
+Data yang tersimpan di dalam PLC—baik berupa register, flag, maupun logika status—menyimpan informasi penting tentang:
+<ol style="list-style-type: disc;">
+  <li>Kondisi mesin saat ini (RUN, STOP, FAULT)</li>
+  <li>Jumlah produk yang telah diproses</li>
+  <li>Waktu siklus dan downtime</li>
+  <li>Alarm dan histori kejadian</li>
+</ol>
+   
+Tanpa aplikasi pembaca data, informasi ini hanya bisa diakses melalui HMI lokal atau software vendor yang terbatas. Dengan aplikasi yang terhubung ke PLC melalui protokol seperti Modbus, OPC UA, atau Serial Port, data dapat ditampilkan secara real-time di dashboard internal, bahkan diakses melalui jaringan LAN/Wi-Fi.</p>
+<h3 class="atx" id="⚙️-keuntungan-penggunaan-aplikasi-pembaca-data-plc">⚙️ Keuntungan Penggunaan Aplikasi Pembaca Data PLC</h3>
+<ol>
+<li>Monitoring Status Mesin Secara Real-Time
+Tim produksi, Engineer dan QC dapat melihat status mesin langsung dari dashboard tanpa harus datang ke lokasi fisik, mempercepat respon terhadap gangguan.</li>
+<li>Pencatatan Otomatis dan Paperless
+Data seperti jumlah produksi, waktu siklus, dan alarm tercatat otomatis ke database, menghilangkan kebutuhan pencatatan manual.</li>
+<li>Integrasi dengan Aplikasi Dashboard
+Aplikasi dapat dihubungkan ke aplikasi dashboard, sehingga data dari PLC langsung masuk ke laporan harian, mingguan, atau shift.</li>
+<li>Analisis Performa dan Efisiensi
+Dengan histori data yang lengkap, manajemen dapat melakukan analisis downtime, cycle time, dan produktivitas mesin secara akurat.</li>
+</ol>
+<h3 class="atx" id="📌-contoh-kasus-penggunaan-di-lapangan">📌 Contoh Kasus Penggunaan di Lapangan</h3>
+<p>Di sebuah pabrik perakitan otomotif, setiap mesin dilengkapi dengan PLC yang mencatat jumlah unit yang diproses dan status operasional. Tim engineering mengembangkan aplikasi berbasis Modbus TCP yang membaca data dari memory PLC dan menampilkannya di dashboard produksi.
+Setiap kali mesin berhenti lebih dari 2 menit, sistem mengirimkan notifikasi ke supervisor. QC juga dapat melihat jumlah produk yang telah diproses dan status alarm dari ruang kontrol.
+Hasilnya:
+<ol style="list-style-type: disc;">
+  <li>Waktu respon terhadap downtime dapat diturunkan hingga 50%</li>
+  <li>Laporan produksi menjadi lebih akurat dan otomatis</li>
+  <li>Kolaborasi antar tim meningkat karena semua pihak melihat data yang sama</li>
+</ol>
+    </p>
+<h3 class="atx" id="✅-tips-implementasi-di-lingkungan-manufaktur">✅ Tips Implementasi di Lingkungan Manufaktur</h3>
+<ol>
+<li>Identifikasi Data Penting di PLC 
+Tentukan register atau memory area yang berisi informasi relevan seperti status mesin, counter, dan alarm.</li>
+<li>Gunakan Protokol Komunikasi yang Sesuai 
+Pilih protokol seperti Modbus RTU/TCP, OPC UA, atau Serial Port tergantung jenis PLC dan infrastruktur jaringan.</li>
+<li>Bangun Dashboard yang User-Friendly 
+Pastikan tampilan aplikasi mudah dipahami oleh setiap user dan manajemen dengan indikator visual dan notifikasi yang jelas.</li>
+<li>Integrasikan dengan Database Produksi 
+Simpan data ke Server Database agar dapat digunakan untuk analisis dan audit.</li>
+<li>Sediakan SOP dan Pelatihan Dasar 
+Engineer dan teknisi perlu memahami cara kerja aplikasi, troubleshooting koneksi, dan interpretasi data agar sistem berjalan optimal.</li>
+</ol>
+<h3 class="atx" id="🔍-kesimpulan">🔍 Kesimpulan</h3>
+<p>Aplikasi pembaca data memory atau data logger pada PLC bukan hanya alat teknis, tetapi fondasi penting dalam membangun sistem manufaktur yang transparan, efisien, dan berbasis data real-time. Dengan akses langsung ke informasi mesin, perusahaan dapat meningkatkan produktivitas, mempercepat respon terhadap masalah, dan memperkuat integrasi antar tim. Bagi user dan manajemen, ini adalah langkah nyata menuju digitalisasi operasional yang lebih cerdas dan adaptif.</p>
+</article>
 
 
 </div>
+<p class="w3-center"><a href="https://himaapp.myr.id/" class="w3-button w3-black" target="_blank" ><i class="fa fa-th"> </i> Go to Our Store</a></p>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="../index.html#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="../projects/plc_data_logger.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>

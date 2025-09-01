@@ -94,27 +94,93 @@ ul.breadcrumb li a:hover {
 <div id="navigation" class="w3-container my-container">
   <ul class="breadcrumb ">
     <li><a href="../index.html">Home</a></li>
-    <li><a href="../index.html#features">Features</a></li>
-    <li>Hardwares</li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li>Energy Monitoring System</li>
   </ul>
 </div>
 
 <div id="title" class="w3-container my-container">
-  <h1><strong>Open Source Hardwares</strong></h1>  
+  <h1><strong>Monitoring Energi Listrik secara Real-Time pada Manufaktur: Efisiensi dan Transparansi Melalui Aplikasi Berbasis Arduino dan ESP8266</strong></h1>  
 </div>
 <hr class="line">
 
+<div class="w3-content w3-center" >
+  <div class="w3-display-container" style="width:100%;">
+    <img src="../images/esp_watt_meter.jpeg" alt="Energy Monitoring System"
+         class="w3-image w3-center w3-border w3-padding"
+         style="width:80%; height:100%; object-fit:cover;">
+  </div>
+</div>
+
 <div id="content" class="w3-container my-container" style="padding:10px 16px" >
-<p>
-  Dalam dunia teknologi yang terus berkembang, pemanfaatan hardware open source semakin populer.
-</p>
+ <article class="markdown-body">
+  <!-- <h1 class="atx" id="monitoring-energi-listrik-real-time-di-manufaktur-efisiensi-dan-transparansi-melalui-aplikasi-berbasis-arduino-dan-esp8266">Monitoring Energi Listrik Real-Time di Manufaktur: Efisiensi dan Transparansi Melalui Aplikasi Berbasis Arduino dan ESP8266</h1> -->
+
+<p>Dalam dunia manufaktur modern, efisiensi energi bukan hanya soal penghematan biaya, tetapi juga bagian dari strategi keberlanjutan dan pengendalian operasional. Salah satu pendekatan yang semakin relevan adalah penggunaan aplikasi monitoring energi listrik secara real-time berbasis Arduino atau ESP8266. Teknologi ini memungkinkan pencatatan dan visualisasi konsumsi energi di setiap titik produksi secara langsung, akurat, dan terintegrasi.</p>
+<p>⚡ Mengapa Monitoring Energi Listrik Itu Penting?
+Energi listrik adalah sumber utama penggerak mesin, sistem kontrol, pencahayaan, dan pendingin di lingkungan manufaktur. Tanpa sistem monitoring yang baik, perusahaan berisiko mengalami:
+<ol list-style-type: disc ;>
+  <li>Pemborosan energi yang tidak terdeteksi</li>
+  <li>Ketidakseimbangan beban antar lokasi kerja</li>
+  <li>Kesulitan dalam analisis efisiensi per mesin atau lini produksi</li>
+</ol>
+   
+Dengan aplikasi berbasis mikrokontroler dan konektivitas Wi-Fi, engineer dan manajemen dapat memantau konsumsi energi secara real-time, bahkan per lokasi atau per mesin, langsung dari dashboard digital.</p>
+<h3 class="atx" id="🔧-keuntungan-penggunaan-aplikasi-monitoring-energi-digital">🔧 Keuntungan Penggunaan Aplikasi Monitoring Energi Digital</h3>
+<ol>
+<li>Pemantauan Real-Time per Lokasi
+Setiap titik produksi dapat dipasangi sensor arus dan tegangan yang terhubung ke Arduino atau ESP8266. Data dikirim secara langsung ke server atau dashboard, memungkinkan analisis konsumsi energi per area.</li>
+<li>Deteksi Beban Berlebih atau Anomali
+Sistem dapat memberikan notifikasi jika terjadi lonjakan konsumsi atau pola penggunaan yang tidak normal, membantu tim teknis melakukan tindakan preventif.</li>
+<li>Paperless dan Terintegrasi
+Tidak perlu lagi mencatat manual dari panel listrik. Semua data tersimpan secara digital dan dapat diakses oleh tim engineering maupun manajemen.</li>
+<li>Analisis Efisiensi Produksi
+Dengan data historis yang lengkap, manajemen dapat membandingkan konsumsi energi antar shift, antar mesin, atau antar produk, untuk menentukan strategi penghematan.</li>
+</ol>
+<h3 class="atx" id="📌-contoh-kasus-penggunaan-di-lapangan">📌 Contoh Kasus Penggunaan di Lapangan</h3>
+<p>Di sebuah pabrik injection molding, setiap mesin produksi dilengkapi dengan sensor arus AC yang terhubung ke ESP8266. Data konsumsi listrik dikirim melalui Wi-Fi ke dashboard internal yang menampilkan:
+  <ol list-style-type: disc;>
+    <li>Konsumsi energi per jam</li>
+    <li>Status aktif/nonaktif mesin</li>
+    <li>Grafik beban listrik per shift</li>
+  </ol>
+   
+Manajemen menggunakan data ini untuk:
+  <ol list-style-type: disc;>
+    <li>Menyesuaikan jadwal produksi agar tidak terjadi beban puncak bersamaan</li>
+    <li>Mengidentifikasi mesin yang boros energi</li>
+    <li>Menyusun laporan efisiensi energi untuk audit internal</li>
+  </ol>
+   
+Hasilnya:
+  <ol list-style-type: disc;>
+    <li>Penghematan energi dapat diturunkan hingga mencapai 15% dalam 3 bulan</li>
+    <li>Waktu respon terhadap gangguan listrik lebih cepat</li>
+    <li>Transparansi data antar departemen meningkat</li>
+  </ol>
+   </p>
+<h3 class="atx" id="✅-tips-implementasi-di-lingkungan-manufaktur">✅ Tips Implementasi di Lingkungan Manufaktur</h3>
+<ol>
+<li>Gunakan Sensor yang Sesuai dengan Daya Mesin
+Pilih sensor arus dan tegangan yang kompatibel dengan kapasitas listrik di lapangan, seperti SCT-013 untuk arus AC.</li>
+<li>Pastikan Koneksi Wi-Fi Stabil 
+Gunakan jaringan lokal yang aman dan stabil agar data dari ESP8266 dapat dikirim tanpa gangguan.</li>
+<li>Integrasikan dengan Dashboard Produksi 
+Hubungkan data energi ke aplikasi dashboard agar manajemen dapat melihat performa energi bersamaan dengan output produksi.</li>
+<li>Sediakan SOP dan Pelatihan Dasar 
+Engineer dan teknisi perlu memahami cara pemasangan sensor, troubleshooting koneksi, dan interpretasi data agar sistem berjalan optimal.</li>
+</ol>
+<h3 class="atx" id="🔍-kesimpulan">🔍 Kesimpulan</h3>
+<p>Aplikasi monitoring energi listrik berbasis Arduino dan ESP8266 bukan hanya alat teknis, tetapi fondasi penting dalam membangun sistem manufaktur yang efisien, transparan, dan berbasis data real-time. Dengan pemantauan konsumsi energi per lokasi, perusahaan dapat mengoptimalkan operasional, mengurangi pemborosan, dan meningkatkan akuntabilitas antar tim. Bagi engineer dan manajemen, ini adalah langkah nyata menuju manufaktur yang lebih cerdas dan berkelanjutan.</p>
+</article>
 
 
 </div>
+<p class="w3-center"><a href="https://himaapp.myr.id/" class="w3-button w3-black" target="_blank" ><i class="fa fa-th"> </i> Go to Our Store</a></p>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="../index.html#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="../projects/energy_monitoring.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
